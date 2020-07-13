@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"doorlockersoftware\startup_stm32f446xx.o"
+"doorlockersoftware\main.o"
+"doorlockersoftware\stm32f4xx_it.o"
+"doorlockersoftware\stm32f4xx_hal_msp.o"
+"doorlockersoftware\stm32f4xx_hal_tim.o"
+"doorlockersoftware\stm32f4xx_hal_tim_ex.o"
+"doorlockersoftware\stm32f4xx_hal_uart.o"
+"doorlockersoftware\stm32f4xx_hal_rcc.o"
+"doorlockersoftware\stm32f4xx_hal_rcc_ex.o"
+"doorlockersoftware\stm32f4xx_hal_flash.o"
+"doorlockersoftware\stm32f4xx_hal_flash_ex.o"
+"doorlockersoftware\stm32f4xx_hal_flash_ramfunc.o"
+"doorlockersoftware\stm32f4xx_hal_gpio.o"
+"doorlockersoftware\stm32f4xx_hal_dma_ex.o"
+"doorlockersoftware\stm32f4xx_hal_dma.o"
+"doorlockersoftware\stm32f4xx_hal_pwr.o"
+"doorlockersoftware\stm32f4xx_hal_pwr_ex.o"
+"doorlockersoftware\stm32f4xx_hal_cortex.o"
+"doorlockersoftware\stm32f4xx_hal.o"
+"doorlockersoftware\stm32f4xx_hal_exti.o"
+"doorlockersoftware\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "DoorLockerSoftware\DoorLockerSoftware.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DoorLockerSoftware.map" -o DoorLockerSoftware\DoorLockerSoftware.axf
